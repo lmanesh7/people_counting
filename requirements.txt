@@ -9,3 +9,4 @@ streamlit==0.74.1
 timezones==2.0.7
 python-dotenv==0.15.0
 plotly==4.14.3
+opencv-python==4.5.1.48
