@@ -1,6 +1,6 @@
 import pyrebase
 import pandas as pd
-import cv2
+import opencv-python as cv2
 import datetime
 import imutils
 import numpy as np
