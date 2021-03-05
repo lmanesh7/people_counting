@@ -7,7 +7,7 @@ import tempfile
 import numpy as np
 import datetime
 
-#from centroidtracker import CentroidTracker
+from centroidtracker import CentroidTracker
 
 from PIL import Image
 
@@ -163,8 +163,8 @@ if file is not None:
         boundingboxes = boundingboxes.astype(int)
         rects = non_max_suppression_fast(boundingboxes, 0.3)
 
-        #objects = tracker.update(rects)
-        objects = rects
+        objects = tracker.update(rects)
+        #objects = rects
         for (objectId, bbox) in objects.items():
             x1, y1, x2, y2 = bbox
             x1 = int(x1)
