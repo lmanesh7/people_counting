@@ -7,7 +7,7 @@ import tempfile
 import numpy as np
 import datetime
 
-from centroidtracker import CentroidTracker
+#from centroidtracker import CentroidTracker
 
 from PIL import Image
 
@@ -69,7 +69,7 @@ if True:
                "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
                "sofa", "train", "tvmonitor"]
 
-    tracker = CentroidTracker(maxDisappeared=80, maxDistance=90)
+    #tracker = CentroidTracker(maxDisappeared=80, maxDistance=90)
 
 
     def non_max_suppression_fast(boxes, overlapThresh):
@@ -163,7 +163,7 @@ if file is not None:
         boundingboxes = boundingboxes.astype(int)
         rects = non_max_suppression_fast(boundingboxes, 0.3)
 
-        objects = tracker.update(rects)
+        #objects = tracker.update(rects)
         for (objectId, bbox) in objects.items():
             x1, y1, x2, y2 = bbox
             x1 = int(x1)
