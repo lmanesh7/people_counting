@@ -167,7 +167,7 @@ if file is not None:
         objects = tracker.update(rects)
         #objects = rects
         for (objectId, bbox) in objects.items():
-            x1, y1 = bbox
+            x1, y1,x2,y2 = bbox
             x1 = int(x1)
             y1 = int(y1)
             x2 = int(x2)
