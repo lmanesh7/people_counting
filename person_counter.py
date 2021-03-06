@@ -6,7 +6,7 @@ import imutils
 import tempfile
 import numpy as np
 import datetime
-from centroid-tracker import CentroidTracker
+import centroid-tracker
 
 #from centroidtracker import CentroidTracker
 
