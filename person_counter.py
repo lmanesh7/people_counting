@@ -173,7 +173,7 @@ if file is not None:
            # x2 = int(x2)
            # y2 = int(y2)
 
-            cv2.rectangle(frame, (x1, y1), (0, 0, 255), 2)
+            cv2.rectangle(frame, (x1, y1),(x1, y1), (0, 0, 255), 2)
             text = "ID: {}".format(objectId)
             cv2.putText(frame, text, (x1, y1 - 5), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), 1)
 
