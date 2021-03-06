@@ -70,7 +70,7 @@ if True:
                "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
                "sofa", "train", "tvmonitor"]
 
-    tracker = CentroidTracker(maxDisappeared=80)
+    tracker = CentroidTracker(maxDisappeared=80, maxDistance=90)
 
 
     def non_max_suppression_fast(boxes, overlapThresh):
