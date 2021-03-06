@@ -6,9 +6,9 @@ import imutils
 import tempfile
 import numpy as np
 import datetime
-import CentroidTracker
 
-#from centroidtracker import CentroidTracker
+
+from centroidtracker import CentroidTracker
 
 from PIL import Image
 
